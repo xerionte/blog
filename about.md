@@ -1,29 +1,27 @@
 ---
 layout: page
-title: About
+title: Créditos o About
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+Hola! Soy Xerionte y no se puede reducir todo a un About
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+It's made by [@xerionte](https://twitter.com/xerionte).
 
-There are currently two themes built on Poole:
+Por cierto hay que mencionar a los creadores de este tema, Lanyon basado por un *ente* superior, Poole:
 
 * [Hyde](http://hyde.getpoole.com)
 * [Lanyon](http://lanyon.getpoole.com)
 
-Learn more and contribute on [GitHub](https://github.com/poole).
-
 ## Setup
 
-Some fun facts about the setup of this project include:
+Algunas consideraciones técnicas *divertidas* acerca de la confección de este Blog que incluyen :
 
-* Built for [Jekyll](https://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Atom](https://atom.io)
+* Este tema **Lanyon** está diseñado para Jekyll, instalado en mi equipo bajo OSX [Jekyll](https://jekyllrb.com)
+* Desarrollado para GitHub y alojado gratuitamente en  [GitHub Pages](https://pages.github.com)
+* Codificado con [Atom](https://atom.io)
+* Sincrozado mediante Github Desktop
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
 
 Thanks for reading!
