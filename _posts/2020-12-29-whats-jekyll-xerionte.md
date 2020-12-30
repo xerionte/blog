@@ -11,9 +11,9 @@ title:  ¿Y para qué este Blog? ¿Y por qué con Jekyll sobre Github?
  
  A pesar de los cientos de blogs que puedas haber leído, no fué trivial montar sobre Github un blog que puedas editar y testar en tu equipo para luego subirlo cuando lo hayas revisado y validado a través de Jekyll. O al menos para mí, que no me dedico expresamente a la creación de infraestructuras de sitios web, aunque como soy informático lo mismo hago ésto, que cambio las pilas a las calculadoras.   
 
- Comencé mediante un *fork* del creador del Theme **Lanyon** y creé un sitio con la apariencia que mejor encaja con la estética barruntada, pero para un mejor control he preferido poder sincronizar los contenidos alojados en el site desde mi puesto de trabajo empleando la herramienta Github Desktop. Este requisito autoexigido, me obligaron a realizar adaptaciones que retrasadan la puesta a punto de la creación de este blog. 
+ Comencé mediante un *fork* del creador del Theme **Lanyon** y creé un sitio con la apariencia que mejor encaja con la estética barruntada, pero para un mejor control he preferido poder sincronizar los contenidos alojados en el site desde mi puesto de trabajo empleando la herramienta Github Desktop. Este requisito autoexigido, me obligó a realizar adaptaciones que retrasaron la puesta a punto de la creación de este blog. Vale, eso las obligaciones y la procrastinación. 
  
- He preferido penalizar la rapidez de la puesta en marcha que permite el propio site de Github por la posibilidad de comprobar antes la apariencia, en local,  lo publicado y también por mantener los contenidos en copia, para lo cual me he tenido que instalar en el puesto de trabajo MacBook Pro con OSX Big Sur (por cierto recién traído por Papá Noel),  
+ Preferí penalizar la rapidez de la puesta en marcha que permite el propio site de Github por la posibilidad de comprobar antes la apariencia, en mi equipo local, de lo publicado y también por mantener una copia de los contenidos, para lo cual me he tenido que instalar en el puesto de trabajo MacBook Pro con OSX Big Sur (por cierto recién traído por Papá Noel),  
  
  * Homebrew, 
  * el paquete del compilador ruby, 
@@ -21,7 +21,9 @@ title:  ¿Y para qué este Blog? ¿Y por qué con Jekyll sobre Github?
  * así como los paquetes con las librerías y los gem de ruby necesarios. 
  * Ah! Y pelear con la configuración de  Github, que aunque es gratuita, no te ofrece la posibilidad de usar sus infraestructura de manera evidente para publicar el blog....
  
- Si en algún momento os habéis planteado hacer un blog con parecidos mimbres No os desaniméis, aunque al final deberéis ejecutar varias decenas de pruebas como ésta. Mucho ensayo y error, y bastantes lecturas *googleadas* regaladas por  distintos usuarios cuyas referencias han quedado en los históricos de los navegadores:
+ Un consejo, es  emplear este enlace de [Nikhita](https://www.nikhita.dev/build-blog-using-github-jekyll) y sus referencias donde comenta detalladamente los pasos dados.
+ 
+ Si en algún momento os planteis crear un blog o CMS de páginas estáticas con parecidos mimbres No os desaniméis, aunque al final deberéis ejecutar varias decenas de pruebas como ésta. Mucho ensayo y error, y bastantes lecturas *googleadas* regaladas por  distintos usuarios cuyas referencias han quedado en los históricos de los navegadores:
  
  {% highlight js %}
  
