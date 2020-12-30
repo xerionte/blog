@@ -72,7 +72,7 @@ If you are starting a NEW Rails application, you can ignore this notice.
      
 Y sobre lo segundo... **¿Para qué este blog?**
  
- Pues sobre todo, como bitácora (lo habitual de un blog) para que no me olviden de algunas de los conocimientos que voy recogiendo y que ese señor alemán nos esconde... Y porque quizás alguna píldora de conocimiento de algún apartado expuesto puede ser útil también a cualquier otr@, al igual que me ha resuelto lo que describí someramente en los párrafos anteriores.
+ Pues sobre todo, como bitácora (lo habitual de un blog) para que no se me olviden algunos de los conocimientos que voy recogiendo y que ese señor alemán nos esconde... Y porque quizás alguna píldora de conocimiento de algún apartado expuesto puede ser útil también a cualquier otr@, al igual que otr@s me ha resuelto lo que describí someramente en los párrafos anteriores.
  
  Aquí intentaré ir subiendo anotaciones, sobre todo de cuestiones que me hayan ido llamando la atención relacionadas con tecnología, la Seguridad IT, retos de hacking, *WriteUps de CTFs*, y otras cuestiones que me entretienen y apasionan . No padezco de titulitis, pero como he deslizado académicamente soy informático  he realizado un máster de postgrado relacionado con la  Seguridad IT relacionado con ámbito y variados  cursos de ciberseguridad :-), aunque también pueda contener información interesante. 
  
