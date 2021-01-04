@@ -3,15 +3,15 @@ layout: post
 title:  ¿Y para qué este Blog? ¿Y por qué con Jekyll sobre Github?
 ---
 
-[Jekyll](https://jekyllrb.com) es un generador de sitios web estáticos, una herramienta de código libre que permite crear websites complejos y flexibles de todos las formas y tamaños. Extraído de [the project's readme](https://github.com/mojombo/jekyll/blob/master/README.markdown):
+[Jekyll](https://jekyllrb.com) es un generador de sitios web estáticos, una herramienta de código libre que permite crear websites complejos y flexibles de todas las formas y tamaños. Extraído de [the project's readme](https://github.com/mojombo/jekyll/blob/master/README.markdown):
 
   > Jekyll is a simple, blog aware, static site generator. It takes a template directory [...] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.
 
  Se trata de una herramienta muy útil que en mi caso estoy empleando con una apariencia y formato (Theme) denominado Lanyon. 
  
- A pesar de los cientos de blogs que puedas haber leído, no fué trivial montar sobre Github un blog que puedas editar y testar en tu equipo para luego subirlo cuando lo hayas revisado y validado a través de Jekyll. O al menos para mí, que no me dedico expresamente a la creación de infraestructuras de sitios web, aunque como soy informático lo mismo hago ésto, que cambio las pilas a las calculadoras.   
+ A pesar de los muchos blogs que pueda haber leído, no me resultó trivial montar en Github un blog (gratuito)ya que quería un entorno en el que pudiera editar y testar el contenido sobre mi equipo para subirlo tras haberlo  revisado y validado empleando Jekyll, el generador html compatible con Github . O al menos no lo fué para mí, ya que no me dedico expresamente a la creación de infraestructuras de sitios web, si bien como soy informático lo mismo hago ésto, que cambio las pilas a las calculadoras.   
 
- Comencé mediante un *fork* del creador del Theme **Lanyon** y creé un sitio con la apariencia que mejor encaja con la estética barruntada, pero para un mejor control he preferido poder sincronizar los contenidos alojados en el site desde mi puesto de trabajo empleando la herramienta Github Desktop. Este requisito autoexigido, me obligó a realizar adaptaciones que retrasaron la puesta a punto de la creación de este blog. Vale, eso las obligaciones y la procrastinación. 
+ Comencé mediante un *fork* en Github del creador del Theme **Lanyon** y creé un sitio con la apariencia que mejor encajara con la estética barruntada, pero para un mejor control he preferido poder sincronizar los contenidos alojados en el site desde mi puesto de trabajo empleando la herramienta Github Desktop. Este requisito autoexigido, me ha obligado a realizar adaptaciones que retrasaron la puesta a punto de la creación de este blog. Vale, es una excusa.. eso, las obligaciones y la procrastinación. 
  
  Preferí penalizar la rapidez de la puesta en marcha que permite el propio site de Github por la posibilidad de comprobar antes la apariencia, en mi equipo local, de lo publicado y también por mantener una copia de los contenidos, para lo cual me he tenido que instalar en el puesto de trabajo MacBook Pro con OSX Big Sur (por cierto recién traído por Papá Noel),  
  
