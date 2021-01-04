@@ -24,4 +24,4 @@ Algunas consideraciones técnicas *divertidas* acerca de la confección de este 
 * Sincrozado mediante Github Desktop
 
 
-Thanks for reading!
+Gracias por leerlo!
