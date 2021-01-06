@@ -3,12 +3,9 @@ layout: post
 title:  Reto 2 Hacking CTF ... Seguimos buscando flags
 ---
 
-Vamos a seguir con el siguiente de los puertos descubiertos por el escaneo nmap que ha conseguido extraer mucha información empleando el script ftp
+Vamos a seguir con el siguiente de los puertos descubiertos por el escaneo nmap que ha conseguido extraer mucha información empleando el script ftp.
 
 ```bash
-<div style="border:1px solid black;height:100px;width:760px;overflow-y:hidden;overflow-x:scroll;">
-<p style="width:250%;">
- 
  9992/tcp  open  ftp   vsftpd 2.0.8 or later
 | ftp-anon: Anonymous FTP login allowed (FTP code 230)
 |_-rw-r--r--    1 0        0        42 Jan 03 19:17 prueba2.txt
