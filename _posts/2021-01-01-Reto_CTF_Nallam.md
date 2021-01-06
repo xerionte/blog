@@ -5,20 +5,19 @@ title:  Retos Hacking CTF del Centro de formación ciberseguridad Nallam
 
 Como ejercicio  final incluido dentro del curso de Hacking ético se me planteó la consecución de 10  retos en los que se deberían conseguir sus correspondientes 10 *flags* o secuencias de 32 caracteres reconocibles.
 
-El reto CTFs contaba con un final donde se necesitaba escalar privilegios hasta convertirse en administrador o root del equipo a vulnerar. En el reto 10.
+El reto CTF contaba con un final donde se necesitaba escalar privilegios hasta convertirse en administrador o root del equipo a vulnerar. En el reto 10.
 
-La máquina presenta accesible y publicada en internet con la dirección 82.165.37.232 y la única pista de que los servicios vulnerables se encontraban por encima de los puertos 9000/tcp.
+La máquina se presenta accesible, publicada en internet con direccionamiento 82.165.37.232 y la única pista de que los servicios vulnerables se encontraban por encima de los puertos 9000/tcp abiertos.
 
-Como en todo proceso de pentesting, se seguirán las fases habituales de enumeración, explotación y  elevación de privilegios... en algún caso no será preciso ya que las *banderas* al menos la primera se mostrarán sin mayor secreto ni complicación.
+Como en todo proceso de pentesting se seguirán las fases habituales de enumeración, explotación y  elevación de privilegios... en algún caso no será preciso ya que las *banderas* (al menos la primera) se mostrarán sin mayor secreto ni complicación.
 
 Sin más, al lío .... empezamos por la fase imprescindible.
 
 ## Enumeración
 
-Previamente  y como habitualmente, iniciamos  la primera fase habitual de Enumeración de servicios accesibles en la máquina remota a través un escaneo de puertos abiertos y estudio de servicios ofrecidos para identificar lo que nos ofrece la máquina. 
+Previamente  y como habitualmente, arrancamos con la  fase habitual de Enumeración de servicios accesibles en la máquina remota a través un escaneo de puertos abiertos y el estudio de servicios ofrecidos con el fin de identificar lo que nos ofrece la máquina. 
 
-Continuaremos, de ser necesario y hasta localizar los flags con las fases de explotación y escalada de privilegios, llegado el caso, ... aunque el objetivo de los 10 retos CFT no lo expliciten.  
-
+Continuaremos, de ser necesario y hasta localizar los flags, con las fases de explotación y escalada de privilegios, llegado el caso, … aunque el objetivo de los 10 retos CFT no lo expliciten.
 
 {% highlight bash %}
  #nmap -p- --open -v -Pn 82.165.37.232 -oG initScan
